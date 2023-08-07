@@ -13,8 +13,8 @@ muteme
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
-    name = 'nonebot_plugin_muteme',
-    description = '高仿@能干辉的muteme',
+    name = 'nonebot-plugin-muteme',
+    description = '高仿@能干辉的muteme,我禁我自己',
     usage = help_text ,
     type="application",
     homepage="https://github.com/XTxiaoting14332/nonebot-plugin-muteme",

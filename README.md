@@ -6,15 +6,15 @@
 
 <div align="center">
 
-# nonebot-plugin-example
+# nonebot_plugin_muteme
 
-_✨ NoneBot 插件简单描述 ✨_
+_✨ 适用于nonebot2 v11的禁言自己插件 高仿 @能干辉 的muteme✨_
 
 
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/owner/nonebot-plugin-example.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-example">
+<a href="https://pypi.python.org/pypi/nonebot-plugin-muteme">
     <img src="https://img.shields.io/pypi/v/nonebot-plugin-example.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">

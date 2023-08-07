@@ -17,7 +17,7 @@ __plugin_meta__ = PluginMetadata(
     description = '高仿@能干辉的muteme',
     usage = help_text ,
     type="application",
-    homepage="https://github.com/XTxiaoting14332/nonebot_plugin_muteme",
+    homepage="https://github.com/XTxiaoting14332/nonebot-plugin-muteme",
     extra={
         "unique_name": "muteme",
         "example": """muteme""",

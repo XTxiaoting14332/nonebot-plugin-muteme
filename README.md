@@ -15,7 +15,7 @@ _✨ 适用于nonebot2 v11的禁言自己插件 高仿 @能干辉 的muteme✨_
     <img src="https://img.shields.io/github/license/XTxiaoting14332/nonebot-plugin-muteme.svg" alt="license">
 </a>
 <a href="https://pypi.python.org/pypi/nonebot-plugin-muteme">
-    <img src="https://img.shields.io/pypi/v/nonebot-plugin-example.svg" alt="pypi">
+    <img src="https://img.shields.io/pypi/v/nonebot-plugin-muteme.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
 

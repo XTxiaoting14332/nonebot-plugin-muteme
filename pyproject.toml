@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "nonebot_plugin_muteme"
-version = "0.0.1"
+name = "nonebot-plugin-muteme"
+version = "0.0.3"
 description = "适用于nonebot2 v11的禁言自己插件 高仿 @能干辉 的muteme"
 authors = ["【夜风】NightWind <2125714976@qq.com>"]
-license = "MIT"
+license = "GPL-3"
 readme = "README.md"
 packages = [{include = "nonebot_plugin_muteme"}]
 homepage = "https://github.com/XTxiaoting14332/nonebot-plugin-muteme"

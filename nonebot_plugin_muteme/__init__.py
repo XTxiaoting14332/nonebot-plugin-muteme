@@ -22,7 +22,7 @@ __plugin_meta__ = PluginMetadata(
         "unique_name": "muteme",
         "example": """muteme""",
         "author": "NightWind",
-        "version": "0.0.3",
+        "version": "0.0.3-beta",
     },
 )
 

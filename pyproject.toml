@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "nonebot_plugin_muteme"
+version = "0.0.1"
+description = "适用于nonebot2 v11的禁言自己插件 高仿 @能干辉 的muteme"
+authors = ["【夜风】NightWind <2125714976@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "nonebot_plugin_muteme"}]
+homepage = "https://github.com/XTxiaoting14332/nonebot_plugin_muteme"
+repository = "https://github.com/XTxiaoting14332/nonebot_plugin_muteme"
+documentation = "https://github.com/XTxiaoting14332/nonebot_plugin_muteme#README.md"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+nonebot2 = ">=2.0.0rc1"
+nonebot-adapter-onebot = ">=2.0.0"
+httpx = ">=0.22.0"
+ujson = ">=5.0.0"
+Pillow = ">=9.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

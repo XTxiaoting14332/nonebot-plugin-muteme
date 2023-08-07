@@ -6,7 +6,7 @@
 
 <div align="center">
 
-# nonebot_plugin_muteme
+# nonebot-plugin-muteme
 
 _✨ 适用于nonebot2 v11的禁言自己插件 高仿 @能干辉 的muteme✨_
 

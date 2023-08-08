@@ -18,6 +18,7 @@ __plugin_meta__ = PluginMetadata(
     usage = help_text ,
     type="application",
     homepage="https://github.com/XTxiaoting14332/nonebot-plugin-muteme",
+supported_adapters={"~onebot.v11"},
     extra={
         "unique_name": "muteme",
         "example": """muteme""",

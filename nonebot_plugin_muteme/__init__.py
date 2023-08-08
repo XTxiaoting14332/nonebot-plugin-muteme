@@ -13,7 +13,7 @@ muteme
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
-    name = 'nonebot-plugin-muteme',
+    name = 'Muteme(我禁我自己)',
     description = '高仿@能干辉的muteme,我禁我自己',
     usage = help_text ,
     type="application",
@@ -22,7 +22,7 @@ __plugin_meta__ = PluginMetadata(
         "unique_name": "muteme",
         "example": """muteme""",
         "author": "NightWind",
-        "version": "0.0.3-beta",
+        "version": "0.0.3-b2",
     },
 )
 

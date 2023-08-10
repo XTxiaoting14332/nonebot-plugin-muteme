@@ -18,12 +18,11 @@ __plugin_meta__ = PluginMetadata(
     usage = help_text ,
     type="application",
     homepage="https://github.com/XTxiaoting14332/nonebot-plugin-muteme",
-    supported_adapters={"~onebot.v11"},
     extra={
         "unique_name": "muteme",
         "example": """muteme""",
         "author": "NightWind",
-        "version": "0.0.3-b3",
+        "version": "0.0.3-b2",
     },
 )
 
@@ -52,3 +51,16 @@ async def send_msg(bot: Bot, event: GroupMessageEvent):
     msg = "被禁名称:" + nickname + "\n被禁时间:" + str(ban_time) + "秒\n" + unban_time_str
     await muteme.finish(Message(f'{msg}'), reply_message=False)
 
+
+@whl.handle()
+async def send_msg(bot: Bot, event: GroupMessageEvent):
+    user_id = event.get_user_id()
+    try:
+        await bot.set_group_ban(group_id=event.group_id, user_id=user_id, duration="30")
+    except Exception as e:
+        print(e)
+        msg = "好好好"
+        await whl.finish(Message(f'{msg}'), reply_message=False)
+
+    msg = "不许好，憋回去！"
+    await whl.finish(Message(f'{msg}'), reply_message=False)

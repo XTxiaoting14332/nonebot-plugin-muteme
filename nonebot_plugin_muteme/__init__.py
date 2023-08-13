@@ -52,6 +52,7 @@ async def send_msg(bot: Bot, event: GroupMessageEvent):
     await muteme.finish(Message(f'{msg}'), reply_message=False)
 
 
+whl = on_regex('^我好了$')
 @whl.handle()
 async def send_msg(bot: Bot, event: GroupMessageEvent):
     user_id = event.get_user_id()

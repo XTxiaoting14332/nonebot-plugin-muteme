@@ -13,7 +13,7 @@ muteme
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
-    name = 'muteme',
+    name = 'muteme(我禁我自己）',
     description = '高仿@能干辉的muteme',
     usage = help_text
 )

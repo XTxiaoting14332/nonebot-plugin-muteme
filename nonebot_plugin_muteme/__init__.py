@@ -13,34 +13,25 @@ muteme
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
-    name = 'Muteme(我禁我自己)',
-    description = '高仿@能干辉的muteme,我禁我自己',
-    usage = help_text ,
-    type="application",
-    homepage="https://github.com/XTxiaoting14332/nonebot-plugin-muteme",
-    extra={
-        "unique_name": "muteme",
-        "example": """muteme""",
-        "author": "NightWind",
-        "version": "0.0.4-b1",
-    },
+    name = 'muteme',
+    description = '高仿@能干辉的muteme',
+    usage = help_text
 )
 
 muteme = on_regex('^muteme$')
-
+muteme2 = on_regex('^mutemе$')
+muteme3 = on_regex('^mutеmе$')
+muteme4 = on_regex('^mutеme$')
+muteme5 = on_regex('^m​​​​‌‏‏​​​​‍​​​​​​‍​‌​​​​‍​‍​​​​‍​‎​​​​‍​‏uteme')
 
 @muteme.handle()
 async def send_msg(bot: Bot, event: GroupMessageEvent):
-#获取用户id和昵称
     user_id = event.get_user_id()
+    ban_time = random.randint(1, 900)
     nickname = event.sender.nickname
-#随机秒数
-    ban_time = random.randint(1, 600)
-#计算解封时间
     now_time = datetime.datetime.now()
     unban_time = now_time + datetime.timedelta(seconds=ban_time)
     unban_time_str = unban_time.strftime("解禁时间:%Y年%m月%d日%H时%M分%S秒")
-#判断Bot是否有权限禁言，如果无权限则发送[E:Permission denied]
     try:
         await bot.set_group_ban(group_id=event.group_id, user_id=user_id, duration=ban_time)
     except Exception as e:
@@ -50,7 +41,6 @@ async def send_msg(bot: Bot, event: GroupMessageEvent):
 
     msg = "被禁名称:" + nickname + "\n被禁时间:" + str(ban_time) + "秒\n" + unban_time_str
     await muteme.finish(Message(f'{msg}'), reply_message=False)
-
 
 whl = on_regex('^我好了$')
 @whl.handle()
@@ -65,3 +55,79 @@ async def send_msg(bot: Bot, event: GroupMessageEvent):
 
     msg = "不许好，憋回去！"
     await whl.finish(Message(f'{msg}'), reply_message=False)
+
+
+
+@muteme2.handle()
+async def send_msg(bot: Bot, event: GroupMessageEvent):
+    user_id = event.get_user_id()
+    ban_time = random.randint(1, 900)
+    nickname = event.sender.nickname
+    now_time = datetime.datetime.now()
+    unban_time = now_time + datetime.timedelta(seconds=ban_time)
+    unban_time_str = unban_time.strftime("解禁时间:%Y年%m月%d日%H时%M分%S秒")
+    try:
+        await bot.set_group_ban(group_id=event.group_id, user_id=user_id, duration=ban_time)
+    except Exception as e:
+        print(e)
+        msg = "禁言失败\n[E:Permission denied]"
+        await muteme2.finish(Message(f'{msg}'), reply_message=False)
+
+    msg = "被禁名称:" + nickname + "\n被禁时间:" + str(ban_time) + "秒\n" + unban_time_str
+    await muteme2.finish(Message(f'{msg}'), reply_message=False)
+
+
+@muteme3.handle()
+async def send_msg(bot: Bot, event: GroupMessageEvent):
+    user_id = event.get_user_id()
+    ban_time = random.randint(1, 900)
+    nickname = event.sender.nickname
+    now_time = datetime.datetime.now()
+    unban_time = now_time + datetime.timedelta(seconds=ban_time)
+    unban_time_str = unban_time.strftime("解禁时间:%Y年%m月%d日%H时%M分%S秒")
+    try:
+        await bot.set_group_ban(group_id=event.group_id, user_id=user_id, duration=ban_time)
+    except Exception as e:
+        print(e)
+        msg = "禁言失败\n[E:Permission denied]"
+        await muteme3.finish(Message(f'{msg}'), reply_message=False)
+
+    msg = "被禁名称:" + nickname + "\n被禁时间:" + str(ban_time) + "秒\n" + unban_time_str
+    await muteme3.finish(Message(f'{msg}'), reply_message=False)
+
+
+@muteme4.handle()
+async def send_msg(bot: Bot, event: GroupMessageEvent):
+    user_id = event.get_user_id()
+    ban_time = random.randint(1, 900)
+    nickname = event.sender.nickname
+    now_time = datetime.datetime.now()
+    unban_time = now_time + datetime.timedelta(seconds=ban_time)
+    unban_time_str = unban_time.strftime("解禁时间:%Y年%m月%d日%H时%M分%S秒")
+    try:
+        await bot.set_group_ban(group_id=event.group_id, user_id=user_id, duration=ban_time)
+    except Exception as e:
+        print(e)
+        msg = "禁言失败\n[E:Permission denied]"
+        await muteme4.finish(Message(f'{msg}'), reply_message=False)
+
+    msg = "被禁名称:" + nickname + "\n被禁时间:" + str(ban_time) + "秒\n" + unban_time_str
+    await muteme4.finish(Message(f'{msg}'), reply_message=False)
+
+@muteme5.handle()
+async def send_msg(bot: Bot, event: GroupMessageEvent):
+    user_id = event.get_user_id()
+    ban_time = random.randint(1, 900)
+    nickname = event.sender.nickname
+    now_time = datetime.datetime.now()
+    unban_time = now_time + datetime.timedelta(seconds=ban_time)
+    unban_time_str = unban_time.strftime("解禁时间:%Y年%m月%d日%H时%M分%S秒")
+    try:
+        await bot.set_group_ban(group_id=event.group_id, user_id=user_id, duration=ban_time)
+    except Exception as e:
+        print(e)
+        msg = "禁言失败\n[E:Permission denied]"
+        await muteme5.finish(Message(f'{msg}'), reply_message=False)
+
+    msg = "被禁名称:" + nickname + "\n被禁时间:" + str(ban_time) + "秒\n" + unban_time_str
+    await muteme5.finish(Message(f'{msg}'), reply_message=False)
